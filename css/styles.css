@@ -610,6 +610,58 @@ border-top: none;
     fill: var(--ocean-btn-color);
 }
 
+/*-----------------------------------Subscribe-------------------------------------------*/
+  
+.footer-subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-title-color);
+    margin-bottom: 16px;
+
+}
+
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    padding-left: 16px;
+}
+
+.btn-subscribe {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: var(--blue-btn-color);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 8px 24px;
+    height: 40px;
+
+}
+.button-icon {
+    position: absolute;
+    fill: var(--white-title-color);
+    
+
+}
+
+
 /*---------------MODAL WINDOW--------------------------------*/
 
 .backdrop {
@@ -632,6 +684,8 @@ border-top: none;
     width: 408px;
     min-height: 576px;
 
+    padding: 24px;
+
     background-color: var(--modal-background-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -640,12 +694,10 @@ border-top: none;
     transform: translate(-50%, -50%) scale(0) rotate(-360deg);
 }
 .modal-close {
-   position: absolute;
-   top: 24px;
-   right: 24px;
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-left: auto;
    height: 24px;
    width: 24px;
    border-radius: 50%;
@@ -654,7 +706,7 @@ border-top: none;
    border: none;
    background: var(--accent-background-color);
    border: 1px solid rgba(0, 0, 0, 0.1);
-
+  
    transition-property: background-color;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -677,3 +729,89 @@ border-top: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-field {
+    margin-bottom: 26px;
+}   
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 34px;
+    padding-top: 24px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 38px;
+    outline: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus {
+    border-color: var(--blue-btn-color);
+}
+.modal-input:focus + .input-icon {
+    fill: var(--blue-btn-color);
+}
+
+.modal-coment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    padding-left: 16px;
+    padding-top: 8px;
+    resize: none;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-coment::placeholder {
+    font-size: 12px;
+    line-height: 1,3;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-coment:focus {
+    border-color: var(--blue-btn-color);
+}
+
+
+.input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-wrap {
+    position: relative;
+}
+
+.input-text {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text-color);
+    margin-bottom: 4px;
+}
+
