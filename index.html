@@ -397,14 +397,13 @@
               placeholder="E-mail"
               name="user-email"
               class="footer-form-input"
+              required
             />
-            <span class="button-subscribe-container">
-              <button type="submit" class="btn-subscribe">
-                Subscribe<svg class="button-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-Frame-1"></use>
-                </svg>
-              </button>
-            </span>
+            <button type="submit" class="btn-subscribe">
+              Subscribe<svg class="button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-1"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -465,24 +464,26 @@
           </div>
           <div class="modal-field">
             <label for="user-text" class="input-text">Comment</label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              class="modal-coment"
-              placeholder="Text input"
-            ></textarea>
+            <div class="textarea-wrap">
+              <textarea
+                name="user-text"
+                id="user-text"
+                class="modal-coment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
           <input
-            id="user-policy"
             type="checkbox"
-            name="user_policy"
-            class="modal-form-check"
+            name="privacy"
+            id="privacy"
+            value="true"
+            class="input-check skills-hidden"
           />
-          <label for="user-policy" class="modal-form-check-desc"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a></label
+          <label for="privacy" class="check-text">
+            I accept the terms and conditions of the&nbsp;<a href="" class="policy-link">Privacy Policy</a></label
           >
-          <button type="submit">Send</button>
+          <button type="submit" class="btn-send">Send</button>
         </form>
       </div>
     </div>
