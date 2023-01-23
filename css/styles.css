@@ -836,7 +836,6 @@ border-top: none;
 }
 .textarea-wrap {
     margin-top: 4px;
-    margin-bottom: 16px;
 }
 
 .check-text {
@@ -846,6 +845,7 @@ border-top: none;
     color: #757575;
     display: flex;
     margin-bottom: 24px;
+    margin-top: 16px;
 }
 .check-text::before {
     content: "";
